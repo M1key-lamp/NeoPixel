@@ -21,6 +21,7 @@ def larson(background, fground, num, spd):
     pixel = 0
     direction = 1
     count = 0
+    dim = [int(c  * 0.8) for c in orange]
     while count < num:
         np.fill(background)
         np.show()
@@ -31,8 +32,8 @@ def larson(background, fground, num, spd):
         if (pixel >= (np.n -1) or pixel <= 0):
             direction *= -1
             count += 1
-        if ((pixel - 1)<= 0):
-            np[pixel -1] = [int(red * 0.8) for count in pixel]
+        if (pixel - 1 >= 0):
+            np[pixel -1] = dim
             
         
       
