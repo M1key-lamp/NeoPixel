@@ -24,7 +24,7 @@ def larson(background, fground, num, spd):
     while count < num:
         np.fill(background)
         np.show()
-        np[pixel -
+        np[pixel - 1]
         np[pixel] = fground
         np.show()
         time.sleep(spd)
